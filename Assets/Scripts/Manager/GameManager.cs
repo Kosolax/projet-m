@@ -6,13 +6,21 @@ public class GameManager : MonoBehaviour
     
     [SerializeField] private QuitGameEventSO quitGameEventSO;
 
-    [SerializeField] private GameSceneSO mainMenuSceneSO;
+    [SerializeField] private GameSceneSO hubSceneSO;
+
+    [SerializeField] private InputEventSO inputEventSO;
 
     private void Start()
     {
         if (this.loadSceneEventSO != null)
         {
-            this.loadSceneEventSO.RaiseEvent(mainMenuSceneSO);
+            this.loadSceneEventSO.RaiseEvent(this.hubSceneSO);
+        }
+
+        if (this.inputEventSO != null)
+        {
+            // TODO
+            this.inputEventSO.EnableGamePlayInput();
         }
     }
 

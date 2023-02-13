@@ -200,7 +200,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadSceneEventSO: {fileID: 11400000, guid: a4f542f8358ed134a9647d10738550d1, type: 2}
   quitGameEventSO: {fileID: 11400000, guid: 39dbfd3670b7b734a930a2209581de3f, type: 2}
-  mainMenuSceneSO: {fileID: 11400000, guid: b9e8a9a1ba653bc4187580d1957b8b70, type: 2}
+  hubSceneSO: {fileID: 11400000, guid: d7a9ff551d6838d4e9074c13081f2c34, type: 2}
+  inputEventSO: {fileID: 11400000, guid: 753b52d68cfc8f245868e71c368331d6, type: 2}
 --- !u!4 &2015117334
 Transform:
   m_ObjectHideFlags: 0
