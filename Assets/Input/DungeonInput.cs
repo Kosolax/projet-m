@@ -116,7 +116,7 @@ public partial class @DungeonInput : IInputActionCollection2, IDisposable
                 {
                     ""name"": ""up"",
                     ""id"": ""64f72503-7f52-492b-9c40-0b35173726d3"",
-                    ""path"": ""<Keyboard>/w"",
+                    ""path"": ""<Keyboard>/#(W)"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -127,7 +127,7 @@ public partial class @DungeonInput : IInputActionCollection2, IDisposable
                 {
                     ""name"": ""down"",
                     ""id"": ""c14c504d-a881-469b-8aa1-0bab7d02dd36"",
-                    ""path"": ""<Keyboard>/s"",
+                    ""path"": ""<Keyboard>/#(S)"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -138,7 +138,7 @@ public partial class @DungeonInput : IInputActionCollection2, IDisposable
                 {
                     ""name"": ""left"",
                     ""id"": ""283d1a1e-442e-406e-8965-86bd21a4fd05"",
-                    ""path"": ""<Keyboard>/a"",
+                    ""path"": ""<Keyboard>/#(Q)"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -149,7 +149,7 @@ public partial class @DungeonInput : IInputActionCollection2, IDisposable
                 {
                     ""name"": ""right"",
                     ""id"": ""346c68a6-c7e7-4f43-ae84-5a7437b664c0"",
-                    ""path"": ""<Keyboard>/d"",
+                    ""path"": ""<Keyboard>/#(D)"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
