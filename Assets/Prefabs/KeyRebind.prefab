@@ -122,7 +122,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 348967295125605605}
+      - m_Target: {fileID: 138781969429298400}
         m_TargetAssemblyTypeName: KeyRebindUI, Assembly-CSharp
         m_MethodName: RebindGamepad
         m_Mode: 1
@@ -280,7 +280,7 @@ GameObject:
   - component: {fileID: 2243060696098947553}
   - component: {fileID: 2243060696098947555}
   - component: {fileID: 2243060696098947552}
-  - component: {fileID: 348967295125605605}
+  - component: {fileID: 138781969429298400}
   m_Layer: 5
   m_Name: KeyRebind
   m_TagString: Untagged
@@ -350,7 +350,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &348967295125605605
+--- !u!114 &138781969429298400
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -359,10 +359,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2243060696098947558}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32fc538bbf9643649a10ef7b6c223207, type: 3}
+  m_Script: {fileID: 11500000, guid: eb46f83cb8bd7764a85878e0898fe52f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputEventSO: {fileID: 11400000, guid: 753b52d68cfc8f245868e71c368331d6, type: 2}
+  inputEventSO: {fileID: 11400000, guid: 97cee81ee174723458a4e94705579cdd, type: 2}
   actionNameText: {fileID: 2243060697668344558}
   keyboardInputText: {fileID: 2243060697074483076}
   gamePadInputText: {fileID: 2243060696045255144}
@@ -370,7 +370,7 @@ MonoBehaviour:
     m_Name: Current Input
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 5752920b-291a-4fbd-910e-c70666bde69e
+    m_Id: 319a67ad-d5d5-4ade-927c-ab9463d8d120
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []
@@ -499,7 +499,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 348967295125605605}
+      - m_Target: {fileID: 138781969429298400}
         m_TargetAssemblyTypeName: KeyRebindUI, Assembly-CSharp
         m_MethodName: RebindKeyboard
         m_Mode: 1
@@ -768,7 +768,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 348967295125605605}
+      - m_Target: {fileID: 138781969429298400}
         m_TargetAssemblyTypeName: KeyRebindUI, Assembly-CSharp
         m_MethodName: ResetBinding
         m_Mode: 1

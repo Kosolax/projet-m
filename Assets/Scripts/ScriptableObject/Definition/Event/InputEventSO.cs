@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
-using static DungeonInput;
+using static CustomInput;
 using static UnityEngine.InputSystem.InputActionRebindingExtensions;
 
 [CreateAssetMenu(fileName = "InputEvent", menuName = "Event/Input", order = 1)]
@@ -18,14 +18,14 @@ public class InputEventSO : ScriptableObject, IGamePlayActions
 
     public event UnityAction OnRebindFinished;
 
-    private DungeonInput dungeonInput;
+    private CustomInput customInput;
 
     private void OnEnable()
     {
-        if (this.dungeonInput == null)
+        if (this.customInput == null)
         {
-            this.dungeonInput = new DungeonInput();
-            this.dungeonInput.GamePlay.SetCallbacks(this);
+            this.customInput = new CustomInput();
+            this.customInput.GamePlay.SetCallbacks(this);
         }
     }
 
@@ -115,9 +115,9 @@ public class InputEventSO : ScriptableObject, IGamePlayActions
 
     public InputAction FindAction(string actionName)
     {
-        if (this.dungeonInput != null)
+        if (this.customInput != null)
         {
-            return this.dungeonInput.asset.FindAction(actionName);
+            return this.customInput.asset.FindAction(actionName);
         }
 
         return null;
@@ -133,7 +133,7 @@ public class InputEventSO : ScriptableObject, IGamePlayActions
 
     public IEnumerator<InputAction> GetDungeonInputEnumerator()
     {
-        return this.dungeonInput.GetEnumerator();
+        return this.customInput.GetEnumerator();
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -146,11 +146,11 @@ public class InputEventSO : ScriptableObject, IGamePlayActions
 
     public void EnableGamePlayInput()
     {
-        this.dungeonInput.GamePlay.Enable();
+        this.customInput.GamePlay.Enable();
     }
 
     public void DisableGamePlayInput()
     {
-        this.dungeonInput.GamePlay.Disable();
+        this.customInput.GamePlay.Disable();
     }
 }
